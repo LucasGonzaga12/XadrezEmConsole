@@ -5,7 +5,7 @@ using xadrez;
 namespace Xadrez {
     class Program {
         static void Main(string[] args) {
-            try {
+            /*try {
                 Tabuleiro tab = new Tabuleiro(8, 8);
 
                 tab.colocarPeca(new Torre(Cor.Preta, tab), new Posicao(0, 0));
@@ -16,7 +16,12 @@ namespace Xadrez {
             }
             catch (Exception ex) {
                 Console.WriteLine(ex.Message);
-            }
+            }*/
+
+            PosicaoXadrez pos = new PosicaoXadrez('c', 7);
+            Console.WriteLine(pos);
+
+            Console.WriteLine(pos.toPosicao());
         }
     }
 }
