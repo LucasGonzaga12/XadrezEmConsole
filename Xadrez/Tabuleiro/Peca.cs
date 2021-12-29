@@ -17,7 +17,9 @@
         public void incrementarQtdeMovimentos() {
             qtdeMovimentos++;
         }
-
+        public void decrementarQtdeMovimentos() {
+            qtdeMovimentos--;
+        }
         public bool existeMovimentosPossiveis() {
             bool[,] mat = movimentosPossiveis();
             for(int i = 0;i<tab.linhas; i++) {
